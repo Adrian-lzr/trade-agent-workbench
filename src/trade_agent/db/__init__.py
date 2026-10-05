@@ -1,0 +1,57 @@
+"""PostgreSQL persistence layer for trade-agent catalog and workflow data."""
+
+from trade_agent.db.models import Base
+from trade_agent.db.repository import (
+    get_price_tiers,
+    get_product,
+    seed_synthetic_catalog,
+)
+from trade_agent.db.runs import (
+    InvalidRunTransitionError,
+    RunAlreadyClaimedError,
+    RunConflictError,
+    RunEventResult,
+    RunLeaseLostError,
+    RunLifecycleError,
+    RunNotFoundError,
+    RunResult,
+    append_run_event,
+    cancel_run,
+    claim_run,
+    complete_run,
+    create_run,
+    fail_run,
+    get_run,
+    heartbeat_run,
+    list_run_events,
+    requeue_expired_runs,
+    resume_run,
+    set_waiting_input,
+)
+
+__all__ = [
+    "Base",
+    "InvalidRunTransitionError",
+    "RunAlreadyClaimedError",
+    "RunConflictError",
+    "RunEventResult",
+    "RunLeaseLostError",
+    "RunLifecycleError",
+    "RunNotFoundError",
+    "RunResult",
+    "append_run_event",
+    "cancel_run",
+    "claim_run",
+    "complete_run",
+    "create_run",
+    "fail_run",
+    "get_price_tiers",
+    "get_product",
+    "get_run",
+    "heartbeat_run",
+    "list_run_events",
+    "requeue_expired_runs",
+    "resume_run",
+    "seed_synthetic_catalog",
+    "set_waiting_input",
+]

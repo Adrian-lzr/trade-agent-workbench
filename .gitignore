@@ -65,3 +65,23 @@ logs/
 
 # Big query
 credentials.json
+
+# Local test and browser artifacts
+.coverage
+coverage.xml
+.playwright-cli/
+.playwright-mcp/
+output/
+__pycache__/
+*.pyc
+
+# Machine-local Docker troubleshooting artifacts
+afunix-probe-*/
+elevated-whoami.txt
+visibility-probe.ps1
+visibility-probe.xml
+docker-afunix-probe.ps1
+docker-runtime-boot-repair.ps1
+docker-runtime-boot-repair.xml
+docker-secrets-engine-*.ps1
+docker-secrets-engine-*.xml

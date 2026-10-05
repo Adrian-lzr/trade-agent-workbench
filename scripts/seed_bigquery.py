@@ -1,12 +1,12 @@
 import argparse
 import json
 import os
-import sys
 from pathlib import Path
+import sys
 
-import yaml
 from dotenv import load_dotenv
 from google.cloud import bigquery
+import yaml
 
 load_dotenv()
 

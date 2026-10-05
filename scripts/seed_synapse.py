@@ -1,12 +1,12 @@
 import argparse
 import json
 import os
+from pathlib import Path
 import struct
 import sys
-from pathlib import Path
 
-import yaml
 from dotenv import load_dotenv
+import yaml
 
 load_dotenv()
 
